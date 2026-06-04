@@ -1,0 +1,130 @@
+<!-- SERVICES SECTION -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>uttam mandap decorattion
+
+    </title>
+    <link rel="stylesheet" href="services.css">
+
+    </head>
+
+<!-- IMAGE POPUP -->
+
+<div id="imagePopup">
+
+    <span onclick="closeImage()">&times;</span>
+
+    <img id="popupImg">
+
+</div>
+
+
+<!--java script-->
+
+
+<script>
+
+function openImage(imageSrc){
+
+    document.getElementById("imagePopup").style.display = "flex";
+
+    document.getElementById("popupImg").src = imageSrc;
+}
+
+function closeImage(){
+
+    document.getElementById("imagePopup").style.display = "none";
+}
+
+</script>
+
+
+
+<body> 
+<section class="services">
+
+            <div class="nav-logo">
+    <div class="logo"></div>
+</div>
+            
+
+
+    <div class="service-title">            
+        <h1>Our Services</h1>
+        <p>We Make Your Special Moments Beautiful</p>
+    </div>
+
+    <div class="service-container">
+
+        <!-- CARD 1 -->
+
+        <div class="service-card">
+
+            <img src="services1.jpeg" alt="Wedding Decoration" onclick="openImage(this.src)">
+
+            <div class="service-content">
+
+                <h2>Wedding Decoration</h2>
+
+                <p>
+                    Beautiful wedding mandap decoration 
+                    with flower and lighting setup.
+                </p>
+
+                <button>View Details</button>
+
+            </div>
+
+        </div>
+
+        <!-- CARD 2 -->
+
+        <div class="service-card">
+
+            <img src="services2.jpeg" alt="Sagai Decoration" onclick="openImage(this.src)">
+
+            <div class="service-content">
+
+                <h2>Sagai Decoration</h2>
+
+                <p>
+                    Stylish engagement stage decoration 
+                    for memorable events.
+                </p>
+
+                <button>View Details</button>
+
+            </div>
+
+        </div>
+
+        <!-- CARD 3 -->
+
+        <div class="service-card">
+
+            <img src="services3.jpeg" alt="Birthday Decoration" onclick="openImage(this.src)">
+
+            <div class="service-content">
+
+                <h2>Birthday Decoration</h2>
+
+                <p>
+                    Attractive birthday party setup 
+                    with balloons and lighting.
+                </p>
+
+                <button>View Details</button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+</body>
+
+</html>

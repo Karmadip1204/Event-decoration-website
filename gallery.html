@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gallery</title>
+     <link rel="stylesheet" href="gallery.css">    
+</head>
+
+
+<!-- IMAGE POPUP -->
+
+<div id="imagePopup">
+
+    <span onclick="closeImage()">&times;</span>
+
+    <img id="popupImg">
+
+</div>
+
+
+<!--java script-->
+
+
+<script>
+
+function openImage(imageSrc){
+
+    document.getElementById("imagePopup").style.display = "flex";
+
+    document.getElementById("popupImg").src = imageSrc;
+}
+
+function closeImage(){
+
+    document.getElementById("imagePopup").style.display = "none";
+}
+
+</script>
+
+
+
+<body>
+    <!-- GALLERY SECTION -->
+
+<section class="gallery">
+
+             <div class="nav-logo">
+    <div class="logo"></div>
+</div>
+
+    <!-- TITLE -->
+
+    <div class="gallery-title">
+
+        <h1>Our Event Gallery</h1>
+
+        <p>
+            Beautiful Mandap Decorations Created By Us
+        </p>
+
+    </div>
+
+    <!-- GALLERY CONTAINER -->
+
+    <div class="gallery-container">
+
+        <!-- CARD 1 -->
+
+        <div class="gallery-card">
+
+            <img src="services1.jpeg" alt="Royal Wedding Mandap"   onclick="openImage(this.src)">
+
+            <div class="gallery-content">
+
+                <h2>Royal Wedding Mandap</h2>
+
+                <p>
+                    Luxury wedding mandap decoration
+                    with flower setup and premium lighting.
+                </p>
+
+                <h3>Price : ₹25,000</h3>
+
+                <button>Book Now</button>
+
+            </div>
+
+        </div>
+
+        <!-- CARD 2 -->
+
+        <div class="gallery-card">
+
+            <img src="services2.jpeg" alt="Sagai Mandap"  onclick="openImage(this.src)">
+
+            <div class="gallery-content">
+
+                <h2>Sagai Decoration</h2>
+
+                <p>
+                    Stylish engagement decoration
+                    with modern stage design.
+                </p>
+
+                <h3>Price : ₹18,000</h3>
+
+                <button>Book Now</button>
+
+            </div>
+
+        </div>
+
+        <!-- CARD 3 -->
+
+        <div class="gallery-card">
+
+            <img src="services3.jpeg" alt="Flower Mandap"  onclick="openImage(this.src)">
+
+            <div class="gallery-content">
+
+                <h2>Flower Decoration</h2>
+
+                <p>
+                    Attractive flower mandap setup
+                    for wedding and reception events.
+                </p>
+
+                <h3>Price : ₹30,000</h3>
+
+                <button>Book Now</button>
+
+            </div>
+
+        </div>
+
+        <!-- CARD 4 -->
+
+        <div class="gallery-card">
+
+            <img src="services4.jpeg" alt="Birthday Decoration" onclick="openImage(this.src)">
+
+            <div class="gallery-content">
+
+                <h2>Birthday Decoration</h2>
+
+                <p>
+                    Balloon and lighting decoration
+                    for birthday celebration events.
+                </p>
+
+                <h3>Price : ₹10,000</h3>
+
+                <button>Book Now</button>
+
+            </div>
+
+        </div>
+         <!-- CARD 5 -->
+
+        <div class="gallery-card">
+
+            <img src="services4.jpeg" alt="Birthday Decoration" onclick="openImage(this.src)">
+
+            <div class="gallery-content">
+
+                <h2>Birthday Decoration</h2>
+
+                <p>
+                    Balloon and lighting decoration
+                    for birthday celebration events.
+                </p>
+
+                <h3>Price : ₹10,000</h3>
+
+                <button>Book Now</button>
+
+            </div>
+
+        </div>
+         <!-- CARD 6 -->
+
+        <div class="gallery-card">
+
+            <img src="services4.jpeg" alt="Birthday Decoration" onclick="openImage(this.src)">
+
+            <div class="gallery-content">
+
+                <h2>Birthday Decoration</h2>
+
+                <p>
+                    Balloon and lighting decoration
+                    for birthday celebration events.
+                </p>
+
+                <h3>Price : ₹10,000</h3>
+
+                <button>Book Now</button>
+
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+</section>
+</body>
+</html>
