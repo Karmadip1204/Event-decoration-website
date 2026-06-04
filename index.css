@@ -13,16 +13,20 @@ body{
     padding: 0;
 }
 .nav-logo{
-    width: 100px;
-    height: 60px;
+    width: 150px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .logo{
     background-image: url("mainlogo.png");
     background-size: contain;
     background-repeat: no-repeat;
-    width: 100px;
-    height: 60px;
+    background-position: center;
+    width: 150px;
+    height: 100px;
 }
 
 
@@ -74,7 +78,7 @@ nav ul li a:hover{
     z-index: 1;
     color: white;
     text-align: center;
-    top: 35%;
+    top: 30%;
     width: 90%;
     margin: auto;
 }
@@ -96,7 +100,8 @@ button{
     border-radius: 30px;
     cursor: pointer;
     transition: 0.3s;
-    margin-top: 25px;
+    margin-top: 35px;
+    
 }
 
 button:hover{
@@ -110,6 +115,17 @@ button a{
 }
 
 @media (max-width:768px){
+  
+
+    nav{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-logo{
+        margin-bottom: 15px;
+    }
+
 
     nav{
         flex-direction: column;
@@ -133,6 +149,10 @@ button a{
 
     .hero-text h1{
         font-size: 45px;
+    }
+
+      .hero-text{
+        top: 32%;
     }
 
     .hero-text p{
