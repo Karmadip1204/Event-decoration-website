@@ -1,17 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow-x: hidden;
+}
+
 body{
     margin: 0;
     padding: 0;
 }
 .nav-logo{
-    height: 50px;
     width: 100px;
+    height: 60px;
 }
 
 .logo{
     background-image: url("mainlogo.png");
-    background-size: cover;
-     height: 150px;
-     width: 150%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 60px;
 }
 
 
@@ -64,11 +75,14 @@ nav ul li a:hover{
     color: white;
     text-align: center;
     top: 35%;
+    width: 90%;
+    margin: auto;
 }
 
 .hero-text h1{
     font-size: 70px;
     margin-bottom: 10px;
+    line-height: 1.1;
 }
 
 .hero-text p{
@@ -89,20 +103,44 @@ button:hover{
     transform: scale(1.05);
 }
 
-@media(max-width:768px){
-
-    .service-title h1{
-        font-size: 38px;
-    }
-
-    .service-title p{
-        font-size: 17px;
-    }
-
-    .service-content h2{
-        font-size: 24px;
-    }
-
+button a{
+    text-decoration: none;
+    color: black;
 }
 
+@media (max-width:768px){
+
+    nav{
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    nav ul{
+        gap: 12px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav ul li a{
+        font-size: 16px;
+    }
+
+    .hero-text{
+        top: 25%;
+        padding: 0 15px;
+    }
+
+    .hero-text h1{
+        font-size: 45px;
+    }
+
+    .hero-text p{
+        font-size: 20px;
+    }
+
+    button{
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+}
 
