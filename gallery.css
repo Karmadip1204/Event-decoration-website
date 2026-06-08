@@ -40,6 +40,15 @@ html,body{
 
     overflow: hidden;
 }
+button:hover{
+    background: orange;
+    transform: scale(1.05);
+}
+
+button a{
+    text-decoration: none;
+    color: black;
+}
 
 
 /* IMAGE POPUP */
